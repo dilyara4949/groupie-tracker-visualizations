@@ -1,0 +1,130 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"); */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #232427;
+  }
+  .container  .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+  }
+
+   .container .content p {
+    font-size: 1rem;
+    /* font-weight: 300; */
+    /* color: rgba(255, 255, 255, 0.9); */
+    z-index: 1;
+    transition: 0.5s;
+  }
+  
+  .suret {
+    display: flex;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* width: 33%; */
+    /* align-items: center; */
+    justify-content: center;
+  }
+
+  .text {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    justify-content: start;
+  }
+  
+   .content {
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: left;
+    flex-wrap: wrap;
+    max-width: 440px;
+    margin: 40px 0;
+    background: #2a2b2f;
+    border-radius: 15px;
+    width: 500px;
+    padding-bottom: 15px;
+    
+  }
+  
+  /* body .container .card {
+    position: relative;
+    min-width: 320px;
+    height: auto;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+  } */
+
+  
+  
+   .container .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+
+   .container .content a {
+    
+    display: inline-block;
+    padding: 10px 24px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    /* position: relative;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: #fff;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px; */
+  }
+ 
+  .key {
+    display: inline;
+  }
+
+  .keykey {
+    color: white;
+    font-weight:bold;
+    /* padding-left: 100px; */
+  }
+  .location{
+    padding-left: 30px;
+  }
+  .date {
+    padding-left: 80px;
+  }
+  .member{
+    padding-left: 30px;
+  }
+  img {
+    border-radius: 5px;
+  }
+  .val {
+    color: white;
+    
+  }

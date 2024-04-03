@@ -1,0 +1,52 @@
+<!-- static/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styleOne.css">
+    <title>ARTISTS!</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            <div class="suret">
+                <img src="{{.Artists.Image}}" alt="{{.Artists.Name}}">
+            </div>
+            <div class="text">
+                <h3 class="keykey">{{.Artists.Name}}</h3> <br>
+                <p class="key keykey">Members : </p> <br>
+                    {{range .Artists.Members}}
+                        <p class="key member val">{{.}} </p> <br>
+                    {{end}}
+                <p class="key keykey">Creation date: </p> <p class="key val">{{.Artists.CreationDate}}</p> <br>
+                <p class="key keykey">Firts album: </p> <p class="key val">{{.Artists.FirstAlbum}}</p> <br>
+                <p class="key keykey">Concert history: </p> <br>
+                {{range $key, $value := .Relation}}
+                    <p class="keykey location">{{$key}}: </p>
+                    {{range $value}}
+                        <p class="date val">{{.}}</p>
+                    {{end}}
+                {{end}}
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        document.getElementById("downloadBtn").addEventListener("click", function () {
+            var asciiText = document.getElementById("output").innerText;
+            var blob = new Blob([asciiText], { type: "text/plain" });
+            var a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "ascii_output.txt";
+            a.click();
+        });
+    </script>
+</body>
+
+</html>
